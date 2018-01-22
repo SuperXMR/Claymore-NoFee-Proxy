@@ -7,9 +7,9 @@ import json
 import sys
 from collections import OrderedDict
 
-pool_address = 'fakepool'
+pool_address = 'eth-eu1.nanopool.org'
 pool_port = 9999
-wallet='0xfakeaddress'
+wallet='0x119ed6380a33d63a484f4c2469837d6061e8d530'
 worker_name='/devfee'
 
 my_lock = threading.Lock()
