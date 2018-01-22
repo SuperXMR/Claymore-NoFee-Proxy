@@ -4,6 +4,21 @@
 
 Please refer to [JuicyPasta/Claymore-No-Fee-Proxy](https://github.com/JuicyPasta/Claymore-No-Fee-Proxy/blob/master/README.md)
 
+
+    Запустить ncpa.cpl
+    Щелкните правой кнопкой мыши на сетевом адаптере -> Свойства
+    Выберите IPv4 (TCP / IPV4) -> Свойства
+    Установите свой LAN-адрес в статическом режиме (с маской, шлюзом и DNS)
+    Нажмите кнопку « Дополнительно».
+    Нажмите на кнопку добавления ниже IP-адреса
+    Введите некоторый публичный IP-адрес (например, 194.12.12.2). Этот реальный адрес будет недоступен.
+    Маска: 255.255.255.255
+    У вас должен быть один шлюз (LAN)
+    Если в прошлом была установлена некоторая запись localhost, измените ее для нового фальшивого IP-адреса WAN
+    В нашем случае 127.0.0.1 становится 194.12.12.2
+    Вы должны изменить его в скрипте скрипта python и, в конечном итоге, в свой файл хоста.
+
+
 ## Why do you rewrite this tool?
 
 The old one([JuicyPasta/Claymore-No-Fee-Proxy](https://github.com/JuicyPasta/Claymore-No-Fee-Proxy/blob/master/README.md)) is buggy.
